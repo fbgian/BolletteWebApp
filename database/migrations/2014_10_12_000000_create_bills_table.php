@@ -18,7 +18,7 @@ class CreateBillsTable extends Migration
             $table->string('name');
             $table->double('price');
             $table->string('period');
-            $table->string('notes');
+            $table->string('notes')->nullable();
         });
     }
 
