@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,8 +13,8 @@ class Bill extends Model {
 
     
     // Realazione One-To-One con Category
-    public function prodCat() {
-        return $this->hasOne(Category::class, 'id_cat', 'id_cat');
+    public function debtors() {
+        return $this->belongsToMany('App/Models/');
     }
 
 }
