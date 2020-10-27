@@ -14,7 +14,8 @@ class CreateDebtors extends Migration
     public function up()
     {
         Schema::create('debtors', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id')->unsigned()->index();
+            $table->string('name');
             $table->timestamps();
         });
     }
