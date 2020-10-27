@@ -12,9 +12,9 @@ class Bill extends Model {
     public $timestamps = false;
 
     
-    // Realazione One-To-One con Category
+    // Relazione con i debitori
     public function debtors() {
-        return $this->belongsToMany('App/Models/');
+        return $this->belongsToMany('App/Models/Debtor');
     }
 
 }
