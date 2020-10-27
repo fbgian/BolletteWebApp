@@ -24,6 +24,11 @@ class DatabaseSeeder extends Seeder
             ['id' => 2, 'name' => 'Gas','price' => 12.10, 'period' => 'Settembre'],
         ]);
 
+        DB::table('users')->insert([
+            ['id' => 1, 'name' => 'Luce', 'price' => 120.10, 'period' => 'Agosto', 'notes' => 'Non si paga' ],
+            ['id' => 2, 'name' => 'Gas','price' => 12.10, 'period' => 'Settembre'],
+        ]);
+
 
     }
 }
