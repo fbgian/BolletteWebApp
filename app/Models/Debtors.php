@@ -12,7 +12,7 @@ class Debtors extends Model
     public $timestamps = false;
 
 
-    // Relazione con i debitori
+    // Relazione con le bollette
     public function bills() {
         return $this->belongsToMany('App/Models/Bill');
     }
