@@ -21,12 +21,12 @@ class DatabaseSeeder extends Seeder
 
         DB::table('bills')->insert([
             ['id' => 1, 'name' => 'Luce', 'price' => 120.10, 'period' => 'Agosto', 'notes' => 'Non si paga' ],
-            ['id' => 2, 'name' => 'Gas','price' => 12.10, 'period' => 'Settembre'],
+            ['id' => 2, 'name' => 'Gas','price' => 12.10, 'period' => 'Settembre', 'notes' => ''],
         ]);
 
         DB::table('users')->insert([
-            ['id' => 1, 'name' => 'Luce', 'price' => 120.10, 'period' => 'Agosto', 'notes' => 'Non si paga' ],
-            ['id' => 2, 'name' => 'Gas','price' => 12.10, 'period' => 'Settembre'],
+            ['id' => 1, 'username' => 'fbgian', 'password' => 'provaprova' ],
+
         ]);
 
 
