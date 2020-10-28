@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/home', 'home')->name('home');
+Route::get('/home', 'ShowBills@ShowAllBills')
+    ->name('home');
